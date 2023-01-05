@@ -1,0 +1,130 @@
+* {
+    font-size: 105%;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.column1 {
+    flex: 30%;
+    padding: 60px;
+    text-align: end;
+    border-right: 5px solid darkcyan;
+    margin: 30px;
+    color: darkcyan;
+}
+
+.column2 {
+    flex: 60%;
+    padding-right: 120px;
+}
+
+h1 {
+    font-size: 170%;
+}
+
+header {
+    background-color: #292D3D;
+    color: white;
+}
+
+header h1 {
+    display: flex;
+    background-color: darkcyan;
+    padding: 10px 70px 10px;
+}
+
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    background-color: #292D3D;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: darkcyan;
+}
+
+main {
+    background-image: url("../images/DSC_4383.JPG");
+    background-size: 100%;
+    height: 280px;
+}
+
+.text-block {
+    position: absolute;
+    right: 60px;
+    background-color: darkcyan;
+    color: white;
+    padding: 25px;
+    margin-top: 150px;
+}
+
+img {
+    height: 400px;
+}
+
+.contact {
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.contact li {
+    border-bottom: 3px solid darkcyan;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    color: darkcyan;
+}
+
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
