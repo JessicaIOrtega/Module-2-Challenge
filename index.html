@@ -2,53 +2,80 @@
 <html lang="en">
 
 <head>
-    <title>My Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <title>Jessica Ortega</title>
 </head>
 
-<body>
-    <header class="nav">
-        <h1>Jessica Ortega</h1>
-        <ul class="navigation">
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="">Resume</a></li>
-        </ul>
-    </header>
-    <main>
+<body clas="container">
+
+    <nav class="navbar navbar-expand-lg bg-success-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jessica Ortega</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
         <div class="text-block">
             <h2>This is just getting started.</h2>
         </div>
     </main>
-    <div class="row">
-        <h1 class="column1">About Me</h1>
-        <p class="column2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet metus nibh. Fusce
-            ullamcorper massa
-            massa, quis hendrerit lorem luctus et. In in tellus a mi pulvinar fringilla. Morbi gravida mauris convallis
-            suscipit malesuada. Sed velit quam, elementum sit amet luctus in, commodo quis justo. Phasellus efficitur
-            augue id libero blandit pharetra. Integer ac iaculis leo. Ut laoreet metus leo, eget lobortis ipsum dapibus
-            et. In feugiat fringilla nunc ut placerat. Maecenas turpis nulla, laoreet sollicitudin ante non, posuere
-            malesuada felis. Nam eleifend lectus neque, vehicula tristique magna tincidunt vel.</p>
-    </div>
-    <div class="row">
-        <h1 class="column1">Work</h1>
-        <div class="column2">
-            <img class="row" src="DSC_3753.JPG" alt="mountains cover with snow">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="col-4" id="aboutme">About Me</h1>
+            <p class="col">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet metus nibh. Fusce
+                ullamcorper massa
+                massa, quis hendrerit lorem luctus et. In in tellus a mi pulvinar fringilla. Morbi gravida mauris
+                convallis
+                suscipit malesuada. Sed velit quam, elementum sit amet luctus in, commodo quis justo. Phasellus
+                efficitur
+                augue id libero blandit pharetra. Integer ac iaculis leo. Ut laoreet metus leo, eget lobortis ipsum
+                dapibus
+                et. In feugiat fringilla nunc ut placerat. Maecenas turpis nulla, laoreet sollicitudin ante non, posuere
+                malesuada felis. Nam eleifend lectus neque, vehicula tristique magna tincidunt vel.</p>
         </div>
-    </div>
-    <div class="row">
-        <h1 class="column1">Contact Me</h1>
-        <ul class="column2 contact">
-            <li>777 777 7777</li>
-            <li>me@me.com</li>
-            <li><a href="github.com">Github</a></li>
-            <li><a href="linkedin.com">Linkedin</a></li>
-        </ul>
+        <div class="row">
+            <h1 class="col-4" id="work">Work</h1>
+            <div class="col" id="project1">
+                <img class="img-fluid" id="project-img" src="Screenshot 2023-01-18 at 8.25.22 PM.png"
+                    alt="mountains cover with snow">
+                <a class="col text-block2" href="https://mzernick.github.io/Drink-of-the-Day/">Drink of the Day</a>
+            </div>
+
+        </div>
+        <div class="row">
+            <h1 class="col-4" id="contact">Contact Me</h1>
+            <ul class="col contact">
+                <li>777 777 7777</li>
+                <li>me@me.com</li>
+                <li><a href="github.com">Github</a></li>
+                <li><a href="linkedin.com">Linkedin</a></li>
+            </ul>
+        </div>
     </div>
 
 </body>
